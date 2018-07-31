@@ -15,6 +15,9 @@ BUILD_DEPS = emqttd cuttlefish
 dep_emqttd = git https://github.com/emqtt/emqttd develop
 dep_cuttlefish = git https://github.com/emqtt/cuttlefish
 
+TEST_DEPS = emqttc
+dep_emqttc = git https://github.com/emqtt/emqttc.git cffa0aa
+
 ERLC_OPTS += +debug_info
 ERLC_OPTS += +'{parse_transform, lager_transform}'
 
